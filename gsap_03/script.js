@@ -1,8 +1,8 @@
 // gsap 03
 
-let initialPath = `M 10 100 Q 250 100 490 100`
+let initialPath = `M 40 150 Q 400 150 1000 150`
 
-let finalPath = `M 10 100 Q 250 100 490 100`
+let finalPath = `M 40 150 Q 400 150 1000 150`
 
 
 
@@ -10,7 +10,11 @@ const string = document.querySelector(".string");
 
 string.addEventListener("mousemove", function (dd) {
     console.log("Mouse Enter");
-    finalPath = `M 10 100 Q ${dd.x} ${dd.y} 490 100`
+    finalPath = `M 40 150 Q  ${dd.x} ${dd.y} 1000 150`
+
+    console.log("x: ", dd.x);
+    console.log("y: ", dd.y);
+
 
     gsap.to("svg path", {
         attr: { d: finalPath },
@@ -22,7 +26,6 @@ string.addEventListener("mousemove", function (dd) {
 
 string.addEventListener("mouseleave", function () {
     console.log("Mouse Leave");
-    finalPath = `M 10 100 Q 250 100 490 100`
 
     gsap.to("svg path", {
         attr: { d: initialPath },
@@ -31,3 +34,6 @@ string.addEventListener("mouseleave", function () {
     })
 
 })
+
+
+

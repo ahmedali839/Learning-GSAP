@@ -8,9 +8,9 @@ const App = () => {
 
   useGSAP(
     () => {
-      gsap.from(".box", {
-        // gsap.from(gsapRef.current, {
-        // x: 1500,
+      // gsap.from(".box", {
+        gsap.from(gsapRef.current, {
+        x: 1500,
         scale: 0,
         duration: 1,
         // delay: 1,

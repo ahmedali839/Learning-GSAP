@@ -1,0 +1,31 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container {
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+  background: linear-gradient(to right bottom, rgb(233, 73, 105), crimson);
+}
+
+.circle {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 20px;
+  background: linear-gradient(to right bottom, lightblue, cadetblue);
+}

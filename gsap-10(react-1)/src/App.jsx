@@ -8,8 +8,8 @@ const App = () => {
 
   useGSAP(
     () => {
-      gsap.from(".box", {
-        // gsap.from(gsapRef.current, {
+      // gsap.from/(".box", {
+        gsap.from(gsapRef.current, {
         x: 1500,
         scale: 0,
         duration: 1,

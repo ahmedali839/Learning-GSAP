@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: crimson;
+}
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: lightblue;
+  padding: 5vw 0;
+}
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: palegreen;
+}
+
+#page2 h1 {
+  font-size: 40vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

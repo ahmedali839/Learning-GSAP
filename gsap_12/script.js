@@ -1,15 +1,20 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#page2 .card", {
-  xPercent: -150,
+const page2 = document.querySelector("#page2");
+const cardStrip = document.querySelector("#page2 .card");
+const getScrollDistance = () => cardStrip.scrollWidth - page2.clientWidth;
+
+gsap.to(cardStrip, {
+  x: () => -getScrollDistance(),
   ease: "none",
   scrollTrigger: {
-    trigger: "#page2",
+    trigger: page2,
     scroller: "body",
     markers: true,
-    start: "top top",
-    end: "+=150%",
+    start: "top 80",
+    end: () => "+=" + getScrollDistance(),
     scrub: 2,
     pin: true,
+    invalidateOnRefresh: true,
   },
 });

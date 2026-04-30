@@ -1,6 +1,6 @@
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#page2 h1", {
+gsap.to("#page2 .card", {
   xPercent: -150,
   ease: "none",
   scrollTrigger: {
